@@ -1,0 +1,1 @@
+package com.poonam.doitimport androidx.lifecycle.MutableLiveDataimport androidx.lifecycle.ViewModelimport javax.inject.Injectclass MainViewModel @Inject constructor() : ViewModel() {    val count : MutableLiveData<Int> = MutableLiveData()    init {        count.value=0    }    fun incrementCount() {        count.value=count.value!!.inc()    }}

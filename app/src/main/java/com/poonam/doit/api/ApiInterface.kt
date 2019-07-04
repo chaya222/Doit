@@ -1,0 +1,1 @@
+package com.poonam.doit.apiimport com.poonam.doit.feature.movie.MovieApiResponseimport retrofit2.Callimport retrofit2.http.GETinterface ApiInterface{    @GET("movie/popular?language=en-US&region=US&page=1")    fun fetchMoviesByType(): Call<MovieApiResponse>}

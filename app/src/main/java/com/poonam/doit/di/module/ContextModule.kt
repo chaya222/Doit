@@ -1,0 +1,1 @@
+package com.poonam.doit.di.moduleimport android.content.Contextimport com.poonam.doit.DoItApplicationimport dagger.Moduleimport dagger.Provides@Moduleclass ContextModule {    @Provides    fun provideContext(application: DoItApplication): Context {        return application.applicationContext    }}
